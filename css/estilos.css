@@ -272,3 +272,42 @@ body {
     display: block;
     margin: 10px auto;
 }
+.info-linea {
+    display: flex;              /* 👈 los pone en fila */
+    justify-content: center;    /* centrar */
+    align-items: center;
+    gap: 30px;                  /* espacio entre ellos */
+    flex-wrap: wrap;            /* baja si no caben */
+    color: white;
+    text-align: center;
+}
+
+.info-linea p {
+    margin: 0;
+    font-size: 16px;
+}
+footer {
+    background: #1b5e20;
+    padding: 20px;
+}
+
+.info-linea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    color: white;
+    text-align: center;
+}
+
+.info-linea p {
+    margin: 0;
+    font-size: 16px;
+}
+.logo-info {
+    width: 250px;     /* tamaño perfecto para celular */
+    display: block;
+    margin: 20px auto;
+}
+``
