@@ -1,0 +1,251 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f4fff4; /* fondo clarito verde */
+}
+
+header {
+    background: #1b5e20; /* verde oscuro */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background: #4caf50; /* verde medio */
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c8e6c9; /* verde claro cuando pasas el mouse */
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background: #1b5e20; /* verde oscuro */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+``
+
+.productos {
+    display: flex;
+    justify-content: center;   /* centra todo */
+    align-items: flex-start;
+    gap: 30px;                 /* espacio entre productos */
+    padding: 40px;
+    flex-wrap: wrap;           /* si no caben, bajan limpio */
+}
+
+.producto {
+    width: 180px; /* 👈 MÁS PEQUEÑOS (estilo que tú quieres) */
+    text-align: center;
+}
+
+.producto-img {
+    width: 150px; /* 👈 imagen más pequeña */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.producto {
+    margin-bottom: 50px;
+}
+
+.titulo-producto {
+    color: #1b5e20;
+    font-size: 20px;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.beneficios {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.beneficios li {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #444;
+    text-align: left;   /* 👈 CAMBIA ESTO */
+    padding-left: 15px;
+}
+
+
+.producto {
+    width: 250px;
+    margin: 20px auto;
+    text-align: center;
+}
+``
+
+.contacto {
+    text-align: center;
+    padding: 40px;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    margin: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+input, textarea {
+    width: 90%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #388e3c;
+}
+
+.info-contacto {
+    margin-top: 20px;
+}
+
+.titulo-contacto {
+    text-align: center;         /* centra */
+    font-size: 40px;            /* más grande */
+    color: #2e7d32;             /* verde elegante */
+    font-family: 'Segoe UI', sans-serif;
+    margin-top: 40px;
+}
+``
+.titulo-info {
+    text-align: center;
+    font-size: 32px;
+    color: #2e7d32; /* verde */
+    font-family: 'Segoe UI', sans-serif;
+    margin-top: 30px;
+}
+
+.info-contacto {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.info-contacto p {
+    margin: 10px 0;
+    color: #333;
+}
+
+.nosotros {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.texto-nosotros {
+    max-width: 600px;
+    margin: 10px auto;
+    font-size: 17px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.subtitulo {
+    color: #1b5e20;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.nosotros {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.texto-nosotros {
+    max-width: 700px;
+    margin: 15px auto;
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.subtitulo {
+    color: #1b5e20;
+    font-size: 24px;
+    margin-top: 25px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background: #4caf50;
+    padding: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo-menu {
+    width: 60px;
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .menu {
+        flex-direction: column; /* se pone vertical */
+    }
+
+    .menu a {
+        display: block;
+        margin: 10px 0;
+    }
+
+}
+@media (max-width: 768px) {
+
+    .productos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .titulo-contacto {
+        font-size: 30px;
+    }
+
+    .texto-nosotros {
+        font-size: 16px;
+    }
+
+}
