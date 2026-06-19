@@ -266,3 +266,9 @@ body {
     }
 
 }
+
+.logo-footer {
+    width: 80px;      /* 👈 tamaño pequeño */
+    display: block;
+    margin: 10px auto;
+}
