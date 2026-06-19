@@ -71,19 +71,22 @@ footer {
     font-weight: bold;
 }
 
+
 .beneficios {
-    list-style: none;
+    list-style-position: inside; /* 👈 clave */
+    text-align: center;          /* centra TODO */
     padding: 0;
-    margin: 0;
+    margin: 10px auto;
+
 }
 
 
+
 .beneficios li {
-    font-size: 14px;
     margin: 5px 0;
-    color: #444;
-    text-align: left;   /* 👈 CAMBIA ESTO */
-    padding-left: 15px;
+    font-size: 15px;
+    color: #444
+
 }
 
 
@@ -311,3 +314,15 @@ footer {
     margin: 20px auto;
 }
 ``
+.beneficios {
+    margin: 10px auto;
+    padding: 0;
+    max-width: 250px;
+    text-align: left;
+}
+
+.beneficios li {
+    margin: 5px 0;
+    font-size: 15px;
+    color: #444;
+}
