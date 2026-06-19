@@ -76,7 +76,7 @@ footer {
     list-style-position: inside; /* 👈 clave */
     text-align: center;          /* centra TODO */
     padding: 0;
-    margin: 10px auto;
+    margin: 20px auto;
 
 }
 
@@ -270,10 +270,14 @@ body {
 
 }
 
+
 .logo-footer {
-    width: 80px;      /* 👈 tamaño pequeño */
+    width: 400px;      /* grande en PC */
+    max-width: 90%;    /* NO se sale en celular */
+    height: auto;
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
+
 }
 .info-linea {
     display: flex;              /* 👈 los pone en fila */
