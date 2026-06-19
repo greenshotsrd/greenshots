@@ -212,10 +212,14 @@ button:hover {
     font-weight: bold;
 }
 
-.logo-menu {
+
+
+logo-menu {
     width: 60px;
     margin-right: 20px;
 }
+
+
 
 @media (max-width: 768px) {
 
@@ -246,6 +250,19 @@ button:hover {
 
     .texto-nosotros {
         font-size: 16px;
+    }
+
+}
+
+body {
+    overflow-x: hidden; /* evita scroll horizontal */
+}
+``
+
+@media (max-width: 768px) {
+
+    .logo {
+        width: 180px;
     }
 
 }
