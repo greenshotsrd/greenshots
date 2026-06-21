@@ -40,6 +40,14 @@
     <p>
         Vitalidad para tu cuerpo con ingredientes 100% naturales 🌿
     </p>
+    
+<div class="slider">
+
+    <img src="img/zanahoria.jpg" class="slide activo">
+    <img src="img/remolacha.jpg" class="slide">
+    <img src="img/detox.jpg" class="slide">
+
+</div>
 
 </section>
 
@@ -52,4 +60,17 @@
 </footer>
 
 </body>
+<script>
+    let slides = document.querySelectorAll(".slide");
+    let index = 0;
+
+    function cambiarSlide() {
+        slides[index].classList.remove("activo");
+        index = (index + 1) % slides.length;
+        slides[index].classList.add("activo");
+    }
+
+    setInterval(cambiarSlide, 3000); // cambia cada 3 segundos
+</script>
+``
 </html>

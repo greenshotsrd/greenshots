@@ -330,3 +330,20 @@ footer {
     font-size: 15px;
     color: #444;
 }
+.slider {
+    width: 90%;
+    max-width: 500px;
+    margin: 30px auto;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+    border-radius: 15px;
+}
+
+/* solo una visible */
+.slide.activo {
+    display: block;
+}
