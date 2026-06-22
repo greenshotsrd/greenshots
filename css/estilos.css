@@ -347,3 +347,67 @@ footer {
 .slide.activo {
     display: block;
 }
+
+.menu {
+    position: relative;
+    background: #4caf50;
+    padding: 15px;
+}
+
+.menu-icono {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-links {
+    display: none;
+    flex-direction: column;
+    background: #4caf50;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+}
+
+.menu-links a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-links a:hover {
+    background: #388e3c;
+}
+
+/* cuando se abre */
+.menu-links.active {
+    display: flex;
+}
+``
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #4caf50;
+    padding: 10px 20px;
+}
+
+.menu-icono {
+    font-size: 25px;
+    color: white;
+}
+
+/* ESTE ES EL CAMBIO IMPORTANTE */
+.menu-links {
+    display: flex;           /* 👈 visible siempre */
+    gap: 20px;
+}
+
+.menu-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
